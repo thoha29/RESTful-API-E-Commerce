@@ -104,7 +104,7 @@ func EditQty(cart_id int, new_qty int) (Response, error) {
 	}
 	if count == 0 {
 		res.Status = http.StatusNotFound
-		res.Message = "Product not found"
+		res.Message = "Cart not found"
 		return res, nil
 	}
 

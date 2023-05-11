@@ -69,6 +69,10 @@ func EditQty(c echo.Context) error {
 
 	qty, err := strconv.Atoi(c.FormValue("qty"))
 
+	if qty <= 0 {
+		return c.JSON(http.StatusBadRequest, "Invalid quantity value")
+	}
+
 	res, err := models.EditQty(cart_id, qty)
 	if err != nil {
 		return c.JSON(http.StatusInternalServerError, err.Error())
