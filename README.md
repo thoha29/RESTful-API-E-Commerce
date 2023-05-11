@@ -16,4 +16,4 @@ Relasi antara tabel adalah One-to-Many:
 - Tabel users memiliki relasi one-to-many dengan tabel orders, karena satu pengguna dapat membuat banyak pesanan, namun satu pesanan hanya dapat dibuat oleh satu pengguna.
 
 ## Dokumentasi
-Untuk dokumentasi dapat dilihat [disini](README.md)
+Untuk dokumentasi dapat dilihat [disini](Dokumentasi)
