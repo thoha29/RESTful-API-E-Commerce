@@ -46,17 +46,13 @@ func FetchCartByUserId(c echo.Context) error {
 }
 
 func DeleteCart(c echo.Context) error {
-	user := c.Get("user").(*jwt.Token)
-	claims := user.Claims.(jwt.MapClaims)
-	userId := claims["user_id"].(float64)
-	user_id := int(userId)
 
-	product_id, err := strconv.Atoi(c.Param("id"))
+	cart_id, err := strconv.Atoi(c.Param("id"))
 	if err != nil {
 		return c.JSON(http.StatusBadRequest, err.Error())
 	}
 
-	res, err := models.DeleteCart(user_id, product_id)
+	res, err := models.DeleteCart(cart_id)
 	if err != nil {
 		return c.JSON(http.StatusInternalServerError, err.Error())
 	}

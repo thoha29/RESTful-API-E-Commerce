@@ -62,18 +62,18 @@ func FetchCartByUserId(user_id int) (Response, error) {
 	return res, nil
 }
 
-func DeleteCart(user_id int, product_id int) (Response, error) {
+func DeleteCart(cart_id int) (Response, error) {
 	var res Response
 	con := db.CreateCon()
 
-	sqlStatement := "DELETE FROM `carts` WHERE `user_id` = ? AND `product_id` = ?"
+	sqlStatement := "DELETE FROM `carts` WHERE `cart_id` = ?"
 
 	stnt, err := con.Prepare(sqlStatement)
 	if err != nil {
 		return res, err
 	}
 
-	result, err := stnt.Exec(user_id, product_id)
+	result, err := stnt.Exec(cart_id)
 	if err != nil {
 		return res, err
 	}
