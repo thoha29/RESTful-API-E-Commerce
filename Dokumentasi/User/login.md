@@ -51,3 +51,5 @@ Login ini digunakan untuk membuat token user
     "message": "sql: no rows in result set"
 }
 ```
+
+Kembali ke halaman [awal](../README.md)
