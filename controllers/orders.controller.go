@@ -74,8 +74,11 @@ func UpdateOrderStatus(c echo.Context) error {
 	}
 
 	status := c.FormValue("status")
+	if status == "" {
+		return c.JSON(http.StatusBadRequest, map[string]string{"message": "Status cannot be empty"})
+	}
 
-	err = models.UpdateOrderStatus(order_id, user_id, product_id, status)
+	_, err = models.UpdateOrderStatus(order_id, user_id, product_id, status)
 	if err != nil {
 		return c.JSON(http.StatusInternalServerError, err.Error())
 	}

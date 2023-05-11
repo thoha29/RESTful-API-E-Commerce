@@ -66,6 +66,18 @@ func DeleteCart(cart_id int) (Response, error) {
 	var res Response
 	con := db.CreateCon()
 
+	// check if cart item exists for specified user_id and cart_id
+	var count int
+	err := con.QueryRow("SELECT COUNT(*) FROM `carts` WHERE `cart_id` = ?", cart_id).Scan(&count)
+	if err != nil {
+		return res, err
+	}
+	if count == 0 {
+		res.Status = http.StatusNotFound
+		res.Message = "Cart not found"
+		return res, nil
+	}
+
 	sqlStatement := "DELETE FROM `carts` WHERE `cart_id` = ?"
 
 	stnt, err := con.Prepare(sqlStatement)

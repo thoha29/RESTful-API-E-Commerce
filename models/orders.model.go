@@ -171,22 +171,23 @@ func DeleteOrder(user_id int, order_id int) (Response, error) {
 	return res, nil
 }
 
-func UpdateOrderStatus(order_id int, user_id int, product_id int, status string) error {
+func UpdateOrderStatus(order_id int, user_id int, product_id int, status string) (Response, error) {
 	con := db.CreateCon()
+	var res Response
 
 	sqlStatement := "UPDATE `orders` SET `status` = ? WHERE `user_id` = ? AND `order_id` = ?"
 
 	stnt, err := con.Prepare(sqlStatement)
 	if err != nil {
-		return err
+		return res, err
 	}
 
 	_, err = stnt.Exec(status, user_id, order_id)
 	if err != nil {
-		return err
+		return res, err
 	}
 
-	return nil
+	return res, nil
 }
 
 func GetProductIdByOrderId(order_id int) (int, error) {
