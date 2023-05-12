@@ -20,7 +20,7 @@ register dan login tidak menggunakan Authentication sisanya menggunakan auth.
 - [Register](User/registrasi.md): `POST /users`
 
 Dari sini samapai API berikutnya kebawah semuannya menggunakan auth.
-- [Add all user](User/show_data_user.md): `GET /users`
+- [Add all user](User/read_data_user.md): `GET /users`
 - [Update user](User/update_data_user.md): `PUT /users/:id`
 - [Delete user](User/delete_data_user.md): `DELETE /users/:id`
 
