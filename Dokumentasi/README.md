@@ -17,7 +17,7 @@ Untuk mengakses API digunakan `http://localhost:1234/(API)`
 ## USER
 register dan login tidak menggunakan Authentication sisanya menggunakan auth.
 - [Login](User/login.md): `POST /login`
-- [Register](User/register.md): `POST /users`
+- [Register](User/registrasi.md): `POST /users`
 
 Dari sini samapai API berikutnya kebawah semuannya menggunakan auth.
 - [Add all user](User/show_data_user.md): `GET /users`
