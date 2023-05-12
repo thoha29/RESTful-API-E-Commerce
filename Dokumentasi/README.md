@@ -8,7 +8,7 @@ Terdapat deberapa fitur-fitur yang diperioritaskan kepada user biasa/ pelanggan 
 - Pelanggan dapat checkout dan melakukan transaksi pembayaran
 - Login dan daftar pelanggan
 
-Selain fungsi-fungsi diatas saya juga menambahkan fungsi-fungsi lain mengikuti CRUD untuk melengkapi keseluruhan fungsi yang dibutuhkan.   
+Selain fungsi-fungsi diatas saya juga menambahkan fungsi-fungsi CRUD yang lain untuk melengkapi keseluruhan fungsi yang dibutuhkan.   
 
 ## RESTful API
 API dikelompokan menjadi 5 sesuai dari banyaknya tabel yang ada di database.
