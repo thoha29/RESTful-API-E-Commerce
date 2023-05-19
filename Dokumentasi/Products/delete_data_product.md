@@ -1,4 +1,4 @@
-# Delete User
+# Delete Product
 
 Menghapus data product
 
