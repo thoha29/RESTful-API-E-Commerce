@@ -1,6 +1,6 @@
-# Add Data Product
+# Read Data Product
 
-Menambahkan produk baru
+Melihat data produk secara keseluruhan
 
 **URL** : `/products`
 
