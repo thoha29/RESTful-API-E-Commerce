@@ -66,7 +66,7 @@ func DeleteCart(cart_id int) (Response, error) {
 	var res Response
 	con := db.CreateCon()
 
-	// check if cart item exists for specified user_id and cart_id
+	// check if cart item exists for specified cart_id
 	var count int
 	err := con.QueryRow("SELECT COUNT(*) FROM `carts` WHERE `cart_id` = ?", cart_id).Scan(&count)
 	if err != nil {

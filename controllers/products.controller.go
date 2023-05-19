@@ -22,6 +22,10 @@ func CreateProduct(c echo.Context) error {
 	stock := c.FormValue("stock")
 	genre_id := c.FormValue("genre_id")
 
+	if product_name == "" || price == "" || stock == "" || genre_id == "" {
+		return c.JSON(http.StatusBadRequest, "Data can't be empty")
+	}
+
 	conv_price, err := strconv.Atoi(price)
 	if err != nil {
 		return c.JSON(http.StatusInternalServerError, err.Error())
@@ -67,6 +71,10 @@ func UpdateProduct(c echo.Context) error {
 	price := c.FormValue("price")
 	stock := c.FormValue("stock")
 	genre_id := c.FormValue("genre_id")
+
+	if product_name == "" || price == "" || stock == "" || genre_id == "" {
+		return c.JSON(http.StatusBadRequest, "Data can't be empty")
+	}
 
 	conv_id, err := strconv.Atoi(product_id)
 	if err != nil {
