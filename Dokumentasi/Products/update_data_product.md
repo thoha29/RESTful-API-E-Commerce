@@ -51,7 +51,7 @@ Mengubah data product
 
 **Condition** : Jika data yang dimasukan kosong
 
-**Code** : `400 Unauthorized`
+**Code** : `400 Bad Request`
 
 **Content** :
 
