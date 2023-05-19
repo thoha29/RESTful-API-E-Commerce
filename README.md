@@ -1,7 +1,7 @@
 # RESTful-API-E-Commerce
 
 ## Deskripsi
-Pada kesemoatan ini saya membuat Backend untuk e-commerce yang menjual komik menggunakan Golang dengan framework Echo. Didalamnya terdapat CRUD serta dilengkapi dengan fitur register dan login.
+Pada kesemoatan ini saya membuat Backend untuk e-commerce yang menjual komik. Projek ini menggunakan Golang dengan framework Echo. Didalamnya terdapat CRUD serta dilengkapi dengan fitur register dan login untuk user.
 
 ## Database
 Disini saya menggunakan database MySQL. Nama database e_commerce dengan susunan tabel sebagai berikut:

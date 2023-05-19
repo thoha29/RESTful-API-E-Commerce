@@ -8,7 +8,7 @@ Terdapat deberapa fitur-fitur yang diperioritaskan kepada user biasa/ pelanggan 
 - Pelanggan dapat checkout dan melakukan transaksi pembayaran
 - Login dan daftar pelanggan
 
-Selain fungsi-fungsi diatas saya juga menambahkan fungsi-fungsi lain mengikuti CRUD untuk melengkapi keseluruhan fungsi yang dibutuhkan.   
+Selain fungsi-fungsi diatas saya juga menambahkan fungsi-fungsi CRUD yang lain untuk melengkapi keseluruhan fungsi yang dibutuhkan.   
 
 ## RESTful API
 API dikelompokan menjadi 5 sesuai dari banyaknya tabel yang ada di database.
@@ -17,10 +17,10 @@ Untuk mengakses API digunakan `http://localhost:1234/(API)`
 ## USER
 register dan login tidak menggunakan Authentication sisanya menggunakan auth.
 - [Login](User/login.md): `POST /login`
-- [Register](User/register.md): `POST /users`
+- [Register](User/registrasi.md): `POST /users`
 
 Dari sini samapai API berikutnya kebawah semuannya menggunakan auth.
-- [Add all user](User/show_data_user.md): `GET /users`
+- [Add all user](User/read_data_user.md): `GET /users`
 - [Update user](User/update_data_user.md): `PUT /users/:id`
 - [Delete user](User/delete_data_user.md): `DELETE /users/:id`
 
@@ -59,6 +59,5 @@ API Order disini ada yang dipakai untuk User dan Admin
 - [Create order oleh user](Cart/create_data_product): `POST /orders`
 - [Add all order sesuai user yang login](Cart/read_data_product): `GET /orders`
 - [Update status order oleh User/Admin](Cart/update_data_product): `PUT /ordes/:id`
-- [Delete order oleh user](Cart/delete_data_product): `DELETE /ordes/:id`
 
 ***NOTE*** id disini merupakan order_id
