@@ -35,7 +35,7 @@ Menambahkan produk dari keranjang ke order.
 
 **Condition** : Jika tidak ada produk didalam cart
 
-**Code** : `400 Bad Request`
+**Code** : `500 Internal Server Error`
 
 **Content** :
 
