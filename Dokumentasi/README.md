@@ -56,8 +56,8 @@ API Cart disini pengaksesnya lebih diperuntukan untuk User/pelanggan
 
 ## ORDER
 API Order disini ada yang dipakai untuk User dan Admin
-- [Create order oleh user](Cart/create_data_order.md): `POST /orders`
-- [Add all order sesuai user yang login](Cart/read_data_order.md): `GET /orders`
-- [Update status order oleh User/Admin](Cart/update_data_order.md): `PUT /ordes/:id`
+- [Create order oleh user](Order/create_data_order.md): `POST /orders`
+- [Add all order sesuai user yang login](Order/read_data_order.md): `GET /orders`
+- [Update status order oleh User/Admin](Order/update_data_order.md): `PUT /ordes/:id`
 
 ***NOTE*** id disini merupakan order_id
