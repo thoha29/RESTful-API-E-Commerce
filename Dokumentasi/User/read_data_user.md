@@ -95,7 +95,7 @@ Dugunakan untuk mengambil semua data user yang ada didalam database
 
 ## Error Response
 
-**Condition** : Jika tidak terauterisasi
+**Condition** : Jika tidak ter-autentikasi
 
 **Code** : `401 Unauthorized`
 

@@ -28,36 +28,36 @@ Dari sini samapai API berikutnya kebawah semuannya menggunakan auth.
 
 ## PRODUCT
 API Product disini pengaksesnya lebih diperuntukan untuk Admin yang memegang CMS
-- [Create product](Products/create_data_product): `POST /products`
-- [Add all product](Products/read_data_product): `GET /products`
-- [Update product](Products/update_data_product): `PUT /products/:id`
-- [Delete product](Products/delete_data_product): `DELETE /products/:id`
+- [Create product](Products/create_data_product.md): `POST /products`
+- [Add all product](Products/read_data_product.md): `GET /products`
+- [Update product](Products/update_data_product.md): `PUT /products/:id`
+- [Delete product](Products/delete_data_product.md): `DELETE /products/:id`
 
 ***NOTE*** id disini merupakan product_id
 
 ## GENRE
 API Genre disini pengaksesnya lebih diperuntukan untuk Admin yang memegang CMS
-- [Create genre](Genre/create_data_genre): `POST /genres`
-- [Add all genre](Genre/read_data_genre): `GET /genres`
-- [Update genre](Genre/update_data_genre): `PUT /genres/:id`
-- [Delete genre](Genre/delete_data_genre): `DELETE /genres/:id`
+- [Create genre](Genre/create_data_genre.md): `POST /genres`
+- [Add all genre](Genre/read_data_genre.md): `GET /genres`
+- [Update genre](Genre/update_data_genre.md): `PUT /genres/:id`
+- [Delete genre](Genre/delete_data_genre.md): `DELETE /genres/:id`
 
 ***NOTE*** id disini merupakan genre_id
 
 ## CART
 API Cart disini pengaksesnya lebih diperuntukan untuk User/pelanggan
-- [Create cart](Cart/create_data_product): `POST /carts`
-- [Add all cart sesuai user yang login](Cart/read_data_product): `GET /carts`
-- [Update qyt product di cart](Cart/update_data_product): `PUT /carts/:id`  
-- [Delete cart](Cart/delete_data_product): `DELETE /carts/:id`
+- [Create cart](Cart/create_data_cart.md): `POST /carts`
+- [Add all cart sesuai user yang login](Cart/read_data_cart.md): `GET /carts`
+- [Update qyt product di cart](Cart/update_data_cart.md): `PUT /carts/:id`  
+- [Delete cart](Cart/delete_data_cart.md): `DELETE /carts/:id`
 
 ***NOTE*** id disini merupakan cart_id
 
 
 ## ORDER
 API Order disini ada yang dipakai untuk User dan Admin
-- [Create order oleh user](Cart/create_data_product): `POST /orders`
-- [Add all order sesuai user yang login](Cart/read_data_product): `GET /orders`
-- [Update status order oleh User/Admin](Cart/update_data_product): `PUT /ordes/:id`
+- [Create order oleh user](Order/create_data_order.md): `POST /orders`
+- [Add all order sesuai user yang login](Order/read_data_order.md): `GET /orders`
+- [Update status order oleh User/Admin](Order/update_data_order.md): `PUT /ordes/:id`
 
 ***NOTE*** id disini merupakan order_id

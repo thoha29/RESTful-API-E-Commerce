@@ -8,6 +8,17 @@ Mengubah data user
 
 **Auth required** : YES
 
+**Data example**
+
+```json
+{
+    "name": "Thoha"
+    "pass": "pass123"
+    "email": "thoha@email",
+    "alamat": "Konoha"
+}
+```
+
 ## Success Response
 
 **Code** : `200 OK`
@@ -26,7 +37,7 @@ Mengubah data user
 
 ## Error Response
 
-**Condition** : Jika tidak terauterisasi
+**Condition** : Jika tidak ter-autentikasi
 
 **Code** : `401 Unauthorized`
 
@@ -40,7 +51,7 @@ Mengubah data user
 
 **Condition** : Jika data yang dimasukan kosong
 
-**Code** : `400 Unauthorized`
+**Code** : `400 Bad Request`
 
 **Content** :
 

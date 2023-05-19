@@ -12,9 +12,9 @@ Registrasi ini digunakan untuk membuat user baru
 
 ```json
 {
-    "name": "[password in plain text]"
+    "name": "[name in plain text]"
     "pass": "[password in plain text]"
-    "email": "[password in plain text]",
+    "email": "[email in plain text]",
     "alamat": "[alamat in plain text]"
 }
 ```
