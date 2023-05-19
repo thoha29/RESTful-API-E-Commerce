@@ -1,4 +1,4 @@
-# Read Data Product
+# Get All Product
 
 Melihat data produk secara keseluruhan
 
