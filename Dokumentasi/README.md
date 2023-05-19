@@ -49,7 +49,7 @@ API Cart disini pengaksesnya lebih diperuntukan untuk User/pelanggan
 - [Create cart](Cart/create_data_cart.md): `POST /carts`
 - [Add all cart sesuai user yang login](Cart/read_data_cart.md): `GET /carts`
 - [Update qyt product di cart](Cart/update_data_cart.md): `PUT /carts/:id`  
-- [Delete cart](Cart/delete_data_cartt.md): `DELETE /carts/:id`
+- [Delete cart](Cart/delete_data_cart.md): `DELETE /carts/:id`
 
 ***NOTE*** id disini merupakan cart_id
 
