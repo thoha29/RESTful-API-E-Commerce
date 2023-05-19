@@ -8,6 +8,17 @@ Mengubah data user
 
 **Auth required** : YES
 
+**Data example**
+
+```json
+{
+    "name": "Thoha"
+    "pass": "pass123"
+    "email": "thoha@email",
+    "alamat": "Konoha"
+}
+```
+
 ## Success Response
 
 **Code** : `200 OK`
