@@ -26,7 +26,7 @@ Menghapus data user
 
 ## Error Response
 
-**Condition** : Jika tidak terauterisasi
+**Condition** : Jika tidak ter-autentikasi
 
 **Code** : `401 Unauthorized`
 
