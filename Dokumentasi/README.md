@@ -46,18 +46,18 @@ API Genre disini pengaksesnya lebih diperuntukan untuk Admin yang memegang CMS
 
 ## CART
 API Cart disini pengaksesnya lebih diperuntukan untuk User/pelanggan
-- [Create cart](Cart/create_data_product.md): `POST /carts`
-- [Add all cart sesuai user yang login](Cart/read_data_product.md): `GET /carts`
-- [Update qyt product di cart](Cart/update_data_product.md): `PUT /carts/:id`  
-- [Delete cart](Cart/delete_data_product.md): `DELETE /carts/:id`
+- [Create cart](Cart/create_data_cart.md): `POST /carts`
+- [Add all cart sesuai user yang login](Cart/read_data_cart.md): `GET /carts`
+- [Update qyt product di cart](Cart/update_data_cart.md): `PUT /carts/:id`  
+- [Delete cart](Cart/delete_data_cartt.md): `DELETE /carts/:id`
 
 ***NOTE*** id disini merupakan cart_id
 
 
 ## ORDER
 API Order disini ada yang dipakai untuk User dan Admin
-- [Create order oleh user](Cart/create_data_product.md): `POST /orders`
-- [Add all order sesuai user yang login](Cart/read_data_product.md): `GET /orders`
-- [Update status order oleh User/Admin](Cart/update_data_product.md): `PUT /ordes/:id`
+- [Create order oleh user](Cart/create_data_order.md): `POST /orders`
+- [Add all order sesuai user yang login](Cart/read_data_order.md): `GET /orders`
+- [Update status order oleh User/Admin](Cart/update_data_order.md): `PUT /ordes/:id`
 
 ***NOTE*** id disini merupakan order_id
