@@ -53,6 +53,12 @@ func CreateUser(user_name string, user_pass string, user_email string, alamat st
 	var res Response
 	con := db.CreateCon()
 
+	if user_name == "" || user_pass == "" || user_email == "" || alamat == "" {
+		res.Status = http.StatusBadRequest
+		res.Message = "Data can't be empty"
+		return res, nil
+	}
+
 	hashedPassword, err := helpers.HashPassword(user_pass)
 	if err != nil {
 		return res, err
