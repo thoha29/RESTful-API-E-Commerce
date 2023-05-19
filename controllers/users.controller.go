@@ -44,6 +44,10 @@ func UpdateUser(c echo.Context) error {
 		return c.JSON(http.StatusInternalServerError, err.Error())
 	}
 
+	if user_name == "" || user_pass == "" || user_email == "" || alamat == "" {
+		return c.JSON(http.StatusBadRequest, "Data can't be empty")
+	}
+
 	result, err := models.UpdateUser(conv_id, user_name, user_pass, user_email, alamat)
 	if err != nil {
 		return c.JSON(http.StatusInternalServerError, err.Error())
