@@ -48,6 +48,17 @@ Menambahkan produk baru
 ```
 
 ## Error Response
+**Condition** : Jika tidak terauterisasi
+
+**Code** : `401 Unauthorized`
+
+**Content** :
+
+```json
+{
+    "message": "invalid or expired jwt"
+}
+```
 
 **Condition** : Jika yang dimasukan ada yang kosong
 
